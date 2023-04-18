@@ -3,8 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="css/base.css">
+    <script src="src/c/initialize.js"></script>
+    <script src="src/m/Movie.js"></script>
+    <script src="src/v/update.js"></script>
+    <script>
+        window.addEventListener("load",pl.v.update.setupUserInterface)
+    </script>
 </head>
 <body>
-
+<main>
+    <form id="Movie">
+        <div><label>Select book:
+            <select name="selectMovie">
+                <option value=""> --- </option></select>
+        </label></div>
+        <div><label>MovieID <output name="movieid"></output></label></div>
+        <div><label>Title: <input name="title"/></label></div>
+        <div><label>Release Date: <input name="releasedate"/></label></div>
+        <div><button type="button" name="commit">
+            Save Changes</button></div>
+    </form>
+</main>
 </body>
 </html>

@@ -3,8 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="css/base.css">
+    <script src="src/c/initialize.js"></script>
+    <script src="src/m/Movie.js"></script>
+    <script src="src/v/delete.js"></script>
+    <script>
+        window.addEventListener("load",pl.v.delete.setupUserInterface)
+    </script>
 </head>
 <body>
-
+    <main>
+        <form id="Movie">
+            <div>
+                <label>Select Movie: <select name="selectMovie">
+                    <option value="">---</option></select>
+                </label>
+            </div>
+            <div><button type="button" name="commit">Delete</button></div>
+        </form>
+    </main>
 </body>
 </html>
